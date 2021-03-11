@@ -1,3 +1,8 @@
+/**
+ * Работа, выполненная с принципами ООП - инкапсуляция, наследования (как от суперкласса к классам, так и от класса к классу),
+ * полиморфизм - также, выполнен, стоит обратить внимание на строчки 17, 47, в этом месте работает данный принцип.
+ */
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -9,6 +14,7 @@ public class Main {
 
         /* Объявление и инициализация объектов */
         Bacterium bacterium = new Bacterium("Вредная бактерия", "Размножение");
+        Bacterium monkey1 = new Monkey("Человеко-подобный", "Убивать");
         Microorganism microorganism = new Microorganism("Злой микроб", "Размножение");
         Monkey monkey = new Monkey("Обезьянка-Нюша", "Поедать бананы");
         Human human = new Human("Константин-повелитель бактерий", "Программирование");
@@ -35,18 +41,19 @@ public class Main {
                 } else if (selectAction == 2) {
                     microorganism.say();
                     microorganism.infection();
-                    Thread.sleep(10000);
+                    Thread.sleep(5000);
                     microorganism.sayMicroorganism();
                 } else if (selectAction == 3) {
                     monkey.say();
                     monkey.infection();
-                    Thread.sleep(10000);
+                    Thread.sleep(5000);
                     monkey.sayMonkey();
                 } else if (selectAction == 4) {
-                    human.say();
                     human.infection();
-                    Thread.sleep(10000);
+                    Thread.sleep(5000);
                     human.sayHuman();
+                    human.sayMonkey();
+
                 } else if (selectAction == 5) {
                     break;
                 }
