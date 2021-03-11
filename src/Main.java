@@ -51,6 +51,8 @@ public class Main {
                     monkey.sayMonkey();
                 } else if (selectAction == 4) {
                     bacterium1.say();
+                    System.out.println("Меня зовут: " + bacterium1.getName());
+                    System.out.println("Мое умение - " + bacterium1.getSkill());
                 } else if (selectAction == 5) {
                     human.say();
                     human.infection();
