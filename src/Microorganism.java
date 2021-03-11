@@ -5,7 +5,7 @@ public class Microorganism extends Bacterium {
     }
 
     public void sayMicroorganism() {
-        System.out.println(getName() + " издает какой-то не понятный звук..." + ".Любит - " + getSkill());
+        System.out.println("\n" + getName() + " издает какой-то не понятный звук..." + ".Любит - " + getSkill() + "\n");
     }
 }
 

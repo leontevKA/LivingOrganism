@@ -5,6 +5,7 @@ public class Monkey extends Microorganism {
     }
 
     public void sayMonkey() {
-        System.out.println("У-у-у-у-у-у-у-у-а! Уаа-аааа-ааа-уу! Ауу-уаау-уа! - издает звуки \""+ getName() +"\". И она любит - " + getSkill());
+        System.out.println("\nУ-у-у-у-у-у-у-у-а! Уаа-аааа-ааа-уу! Ауу-уаау-уа!" +
+                " - издает звуки \""+ getName() +"\". И она любит - " + getSkill() + "\n");
     }
 }
