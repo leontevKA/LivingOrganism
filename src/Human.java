@@ -4,6 +4,10 @@ public class Human extends Monkey {
         super(name, skill);
     }
 
+    public void say() {
+        System.out.println("\nЯ эволюционировал от обезьяны!");
+    }
+
     public void sayHuman() {
         System.out.print("\nНу наконец-то я могу сказать! Слава богу, что эволюционная цепочка не такая большая, как мне хотелось бы её описать!\n" +
                 "Кстати, меня зовут: " + getName() + ".И да, я люблю - " + getSkill() +

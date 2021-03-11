@@ -14,7 +14,7 @@ public class Main {
 
         /* Объявление и инициализация объектов */
         Bacterium bacterium = new Bacterium("Вредная бактерия", "Размножение");
-        Bacterium monkey1 = new Monkey("Человеко-подобный", "Убивать");
+        Bacterium bacterium1 = new Monkey("Полиморфная обезьяна", "Полиморфирование");
         Microorganism microorganism = new Microorganism("Злой микроб", "Размножение");
         Monkey monkey = new Monkey("Обезьянка-Нюша", "Поедать бананы");
         Human human = new Human("Константин-повелитель бактерий", "Программирование");
@@ -30,8 +30,9 @@ public class Main {
                 "\n1. Бактерия" +
                 "\n2. Микроорганизм" +
                 "\n3. Обезьянка" +
-                "\n4. Человек" +
-                "\n5. Завершить работу");
+                "\n4. Обезьянка с полиморфизмом" +
+                "\n5. Человек" +
+                "\n6. Завершить работу");
         System.out.print("Пожалуйста, выберите раздел: ");
         while (true) {
             try {
@@ -49,12 +50,14 @@ public class Main {
                     Thread.sleep(5000);
                     monkey.sayMonkey();
                 } else if (selectAction == 4) {
+                    bacterium1.say();
+                } else if (selectAction == 5) {
+                    human.say();
                     human.infection();
                     Thread.sleep(5000);
                     human.sayHuman();
                     human.sayMonkey();
-
-                } else if (selectAction == 5) {
+                } else if (selectAction == 6) {
                     break;
                 }
                 System.out.print("Пожалуйста, выберите раздел: ");
